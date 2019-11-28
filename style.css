@@ -2,8 +2,8 @@
     font-family: FuturaBookC;
     --general-white: #fff;
     --general-yellow: #E3B873;
+    --general-black: #959595;
     --background-black: #252525;
-
 }
 
 /* GENERAL */
@@ -80,15 +80,42 @@ h1 span {
 }
 
 /* PROJECT */
-project-title {
+.project-title {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 138.6%;
-    /* or 30px */
     text-align: center;
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: var(--general-yellow);
+}
+
+.project-text {
+    font-size: 14px;
+    line-height: 158.48%;
+    text-align: center;
+    color: var(--general-white);
+}
+
+.project-data {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.project-data-title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    color: var(--general-yellow);
+}
+
+.project-data-text {
+    font-size: 14px;
+    line-height: 135.84%;
+    color: var(--general-white);
 }
