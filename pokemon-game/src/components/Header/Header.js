@@ -1,7 +1,7 @@
 import React from "react";
 import h from './header.module.css';
 
-function Header ({ title, descr }) {
+const Header = ({ title, descr }) => {
   return (
     <>
     <header className={ h.root }>

@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
 import FirstBg from './assets/bg1.jpg';
 import SecondBg from './assets/bg3.jpg';
 
 import Header from './components/Header/Header.js';
 import Layout from './components/Layout/Layout.js';
+import Footer from './components/Footer/Footer.js';
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         descr="This is Description!"
         urlBg={ SecondBg }
       />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
