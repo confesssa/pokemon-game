@@ -2,7 +2,7 @@ import React from "react";
 
 import l from './layout.module.css';
 
-const Layout = ({ id, title, descr, urlBg, colorBg='#e2e2e2', children}) => {
+const Layout = ({ id, title, urlBg, colorBg='#e2e2e2', children}) => {
   const rootBg = {
         background: `${colorBg}${urlBg
             ? ` url(${urlBg}) no-repeat fixed left bottom / cover`
@@ -18,7 +18,7 @@ const Layout = ({ id, title, descr, urlBg, colorBg='#e2e2e2', children}) => {
                 <span className={ l.separator }></span>
               </div>
               <div className={l.desc+ ' ' + l.full}>
-                <p>{ children ? children : descr }</p>
+                <p>{ children }</p>
               </div>
             </article>
         </div>
