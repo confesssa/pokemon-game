@@ -1,5 +1,4 @@
 import React from "react";
-import { Children } from "react";
 import h from './header.module.css';
 
 const Header = ({ title, children }) => {
@@ -9,7 +8,7 @@ const Header = ({ title, children }) => {
       <div className={ h.forest }></div>
       <div className={ h.container }>
         <h1>{ title }</h1>
-        <p>{ children }</p>
+        { children }
       </div>
     </header>
     </>
