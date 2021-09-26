@@ -3,12 +3,11 @@ import p from './pokemonCard.module.css';
 
 const PokemonCard = ({ type, values, name, id, img}) => {
   return (
-    <div className='root'>
+    <div className={ p.root }>
       <div className={ p.pokemonCard }>
-        <div key={ id }></div>
         <div className={ p.cardFront }>
-          <div className="wrap front">
-              <div className={ p.pokemon + " " + p.flying }>
+          <div className={p.wrap + ' ' + p.front}>
+              <div className={ `${p.pokemon} ${p[type]}` }>
                   <div className={p.values}>
                       <div className={p.count + ' ' + p.top}>{ values.top }</div>
                       <div className={p.count + ' ' + p.right}>{ values.right }</div>
@@ -27,7 +26,7 @@ const PokemonCard = ({ type, values, name, id, img}) => {
           </div>
       </div>
 
-      <div className={p.cardBackSide}>
+      <div className={p.cardBack}>
           <div className={p.wrap + ' ' + p.back}>
               <img src={ cardBackSide } alt="Сard Backed" />
           </div>

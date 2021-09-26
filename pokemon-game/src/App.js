@@ -8,6 +8,8 @@ import Layout from './components/Layout/Layout.js';
 import Footer from './components/Footer/Footer.js';
 import PokemonCard from './components/PokemonCard/PokemonCard.js';
 
+import './App.css';
+
 const POKEMONS = [
   {
     "abilities": [
@@ -165,7 +167,7 @@ const App = () => {
         title="This is Second Layout">
           <div className='flex'>
             { 
-            POKEMONS.map((item) => <PokemonCard {...item} />)
+            POKEMONS.map((item, index) => <PokemonCard key={index} {...item} />)
             }
           </div>
       </Layout>
